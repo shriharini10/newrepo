@@ -10,18 +10,24 @@
     <body>
         <div id="root"></div>
         <script type="text/babel">
-            let pop = "🎉";
-            let thumb = "👍";
-            let music = "🎶";
-            let name = "harini"
+            function Header() {
+                return <h1> KUCHE <h1>
+            }
+
+            function Main() {
+                return <p> We serve delicious food around!<p>
+            }
+
+            function App() {
+                <div>
+                    <Header />
+                    <Main />
+                </div>
+                
+            }
 
             ReactDOM.render(
-                <ul>
-                    <li>{pop}</li>
-                    <li>{thumb}</li>
-                    <li>{music}</li>
-                    <li>{name.toUpperCase()}</li>
-                </ul>,
+                <App />,
                 document.getElementById("root")
             );
         </script>
