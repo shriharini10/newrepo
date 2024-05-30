@@ -13,7 +13,7 @@
             function Header(props) {
                 return (
                     <header>
-                        <h1>{name}'s KUCHE 🎂</h1>
+                        <h1>{props.name}'s KUCHE 🎂</h1>
                     </header>
                 );        
             }
@@ -21,7 +21,7 @@
             function Main(props) {
                 return (
                     <section>
-                        <p> We provide {adj} food around!</p>
+                        <p> We provide {props.adj} food around!</p>
                     </section>
                 );
             }
@@ -29,9 +29,9 @@
             function Foot(props){
                 return(
                     <footer>
-                        copyright {year}
+                        copyright {props.year}
                     </footer>
-                )    
+                );    
             }
 
             function App() {
