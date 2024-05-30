@@ -22,7 +22,7 @@
                 return (
                     <section>
                         <ul>
-                            {dishes.map((dish)=> (
+                            {props.dishes.map((dish)=> (
                                 <li>{dish}</li>
                             ))}
                         </ul>
@@ -48,11 +48,11 @@
                 return (
                 <div>
                     <Header name="Harini"/>
-                    <Main adj = "Mouth watering"/>
+                    <Main adj = "Mouth watering" dishes={dishes}/>
                     <Foot year={new Date().getFullYear()} />
                 </div>
                 );
-            }
+            } 
 
             
 
