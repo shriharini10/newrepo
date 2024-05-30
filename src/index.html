@@ -20,10 +20,13 @@
 
             function Main(props) {
                 return (
-                    <ul>
-                        {dishes.map(menu)=>
-                            (<li>{menu}</li>
-                    </ul>
+                    <section>
+                        <ul>
+                            {dishes.map((menu)=>
+                                (<li>{menu}</li>
+                                ))
+                        </ul>
+                    </section>
                 );
             }
 
@@ -35,6 +38,12 @@
                 );    
             }
 
+            const dishes=[
+                "Mac n cheese",
+                "Hot chocolate",
+                "Pizza"
+            ];
+
             function App() {
                 return (
                 <div>
@@ -45,11 +54,7 @@
                 );
             }
 
-            const dishes=[
-                "Mac n cheese",
-                "Hot chocolate",
-                "Pizza"
-            ];
+            
 
             ReactDOM.render(
                 <App />,
